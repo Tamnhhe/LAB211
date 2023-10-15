@@ -27,6 +27,7 @@ class Message {
     public static final String ERROR_RANGE = "Error range";
     public static final String ERROR_INVALID_NUMBER = "Value of matrix is digit";
     public static final String ROW_NOT_MATCH = "Second row of matrix must be equal row Matrix 1\n";
+    public static final String MULTI_ROW_NOT_MATCH = "Second row of matrix must be equal column Matrix 1\n";
     public static final String COLUMN_NOT_MATCH = "Second column of matrix must be equal column Matrix 1\n";
     public static final String COLUMN_SHOULD_BE_POSITIVE = "Column matrix must be > 0";
     
