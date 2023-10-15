@@ -52,7 +52,7 @@ public class Main {
                     System.out.println(Constant.MULTIPLICATION);
                     matrix.displayMatrix(secondMatrix);
                     System.out.println(Message.EQUAL);
-                    matrix.displayMatrix(calculator.sumMatrix(firstMatrix, secondMatrix, Constant.MULTIPLICATION));
+                    matrix.displayMatrix(calculator.multiplicationMatrix(firstMatrix, secondMatrix));
                     break;
                 case 4:
                     //exit

@@ -33,7 +33,7 @@ public class CalculatorMatrix {
         int columnFirstMatrix = firstMatrix[0].length;
         int columnSecondMatrix = secondMatrix[0].length;
         int[][] matrixResult = new int[rowFisrtMatrix][columnSecondMatrix];
-
+        
         for (int i = 0; i < rowFisrtMatrix; i++) {
             for (int j = 0; j < columnSecondMatrix; j++) {
                 matrixResult[i][j] = 0;
@@ -43,7 +43,7 @@ public class CalculatorMatrix {
         for (int i = 0; i < rowFisrtMatrix; i++) {
             for (int j = 0; j < columnSecondMatrix; j++) {
                 for (int k = 0; k < columnFirstMatrix; k++) {
-                    matrixResult[i][j] += firstMatrix[i][j] * secondMatrix[i][j];
+                    matrixResult[i][j] += firstMatrix[i][k] * secondMatrix[k][j];
                 }
 
             }

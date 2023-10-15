@@ -21,14 +21,14 @@ class Message {
     public static final String INVALID_INPUT = "Invalid";
     public static final String ENTER_ROW_MATRIX = "Enter row matrix %d: ";
     public static final String ENTER_COLUMN_MATRIX = "Enter column matrix %d:";
-    public static final String ERROR_ROW_MATRIX = "Row matrix must be >0";
-    public static final String ERROR_COLUMN_MATRIX = "Column matrix must be >0";
+    public static final String ERROR_ROW_MATRIX = "Row matrix must be > 0\n";
+    public static final String ERROR_COLUMN_MATRIX = "Column matrix must be > 0\n";
     public static final String ENTER_MATRIX_ELEMENT = "Enter matrix %d[%d][%d]: ";
-    public static final String ERROR_RANGE = "Error range";
-    public static final String ERROR_INVALID_NUMBER = "Value of matrix is digit";
+    public static final String ERROR_RANGE = "Error range\n";
+    public static final String ERROR_INVALID_NUMBER = "Value of matrix is digit\n";
     public static final String ROW_NOT_MATCH = "Second row of matrix must be equal row Matrix 1\n";
     public static final String MULTI_ROW_NOT_MATCH = "Second row of matrix must be equal column Matrix 1\n";
     public static final String COLUMN_NOT_MATCH = "Second column of matrix must be equal column Matrix 1\n";
-    public static final String COLUMN_SHOULD_BE_POSITIVE = "Column matrix must be > 0";
+    public static final String COLUMN_SHOULD_BE_POSITIVE = "Column matrix must be > 0\n";
     
 }
