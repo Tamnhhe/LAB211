@@ -34,7 +34,7 @@ public class Message {
     public static final int MAX_TYPE = 4;
     public static final double GUARDANTEED_VALUE = 0.5;
     public static final int MIN_VALUE = 8;
-    
+    public static final double MAX_DOUBLE_VALUE = 17.5;
     public static final int MAX_VALUE = 17;
     
 }
