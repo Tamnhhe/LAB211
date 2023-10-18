@@ -1,15 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Resource;
 
 /**
+ * Class containing various messages used in the program.
  *
- * @author Tamnhhe
+ * @author Tamnhhe1713108 
+ * Class SE1811 
+ * Subject J1.S.P0071 
+ * Version 1.0
  */
+
 public class Message {
+
+    public static final String MENU = "======== Task ========\n1. Add Task\n2. Delete Task\n3. Display Task\n4. exit";
     public static final String REGEX_STRING = "[a-z A-Z 0-9]+";
     public static final String OPTION = "Option: ";
     public static final String WRONG_INPUT = "Input cannot be empty !!";
@@ -18,7 +20,7 @@ public class Message {
     public static final String MATCHES = "\\d{1,2}[-]\\d{1,2}[-]\\d{1,4}";
     public static final String DATE_WRONG_FORMAT = "Date must be is format dd-MM-yyyy";
     public static final String DATE_FORMAT = "dd-MM-yyyy";
-    public static final String DATE_CONDITIONS = "Date must be greater or equal ti current date !!";
+    public static final String DATE_CONDITIONS = "Date must be greater or equal current date !!";
     public static final String DATE_EXIST = "Date does not exist !!";
     public static final String REQUIREMENT = "Requirement Name: ";
     public static final String WRONG = "Wrong";
@@ -36,5 +38,13 @@ public class Message {
     public static final int MIN_VALUE = 8;
     public static final double MAX_DOUBLE_VALUE = 17.5;
     public static final int MAX_VALUE = 17;
+    public static final String ID = "ID";
+    public static final String NAME = "Name";
+    public static final String TASKTYPE = "Task Type";
+    public static final String DATE = "Date";
+    public static final String TIME = "Time";
+    public static final String ASSIGNEE = "Assignee";
+    public static final String REVIEWER = "Reviewer";
     
+
 }

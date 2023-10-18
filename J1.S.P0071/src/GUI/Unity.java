@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package GUI;
 
 import java.util.Scanner;
@@ -11,11 +7,25 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- *
- * @author Tamnhhe
+ * Class for handling user input operations.
+ * @author Tamnhhe1713108
+ * Class SE1811
+ * Subject J1.S.P0071
+ * Version 1.0
  */
 public class Unity {
 
+    /**
+     * Get an integer input from the user within a specified range.
+     *
+     * @param message Prompt message for user input
+     * @param firstError Error message for input below range
+     * @param secondError Error message for input above range
+     * @param thirdError Error message for non-integer input
+     * @param min Minimum value allowed
+     * @param max Maximum value allowed
+     * @return Validated integer input
+     */
     Scanner scanner = new Scanner(System.in);
 
     public int getInt(String message, String firstError, String secondError, String thirdError, int min, int max) {
