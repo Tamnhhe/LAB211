@@ -8,29 +8,25 @@ import java.util.ArrayList;
 /**
  * Class for managing tasks (TaskManager) that handles tasks related operations.
  *
- * @author Tamnhhe1713108. 
+ * @author Tamnhhe171308. 
  * Class SE1811. 
  * Subject J1.S.P0071. 
  * Version 1.0
  */
 public class TaskManager {
 
+    // Initialize a new Unity object and assign it to the variable 'input'
     Unity input = new Unity();
-    ArrayList<Task> listTask = new ArrayList<>();
+
+    // Initialize an ArrayList to store a list of Task objects, and make it immutable.
+    private final ArrayList<Task> listTask = new ArrayList<>();
 
     /**
-     * Checks if any task overlaps in terms of date, assignee, and time range.
-     *
-     * @param date The date of the task
-     * @param assignee The assignee of the task
-     * @param from The start time
-     * @param to The end time
-     * @return true if there is an overlap, false otherwise.
+     * Function to check Duplicate element
      */
     public boolean checkDuplicate(String date, String assignee, double from, double to) {
-
         for (Task task : listTask) {
-            if (task.getDate().compareTo(date) == 0 && (task.getAssignee().compareTo(assignee) == 0)) {
+            if ((task.getDate().compareTo(date) == 0) && (task.getAssignee().compareTo(assignee) == 0)) {
                 if (from < task.getFrom() && to > task.getFrom()) {
                     return true;
                 }
@@ -43,6 +39,7 @@ public class TaskManager {
             }
         }
         return false;
+
     }
 
     /**
@@ -51,7 +48,8 @@ public class TaskManager {
     public void inputTask() {
         String requirementName, date, assignee, reviewer;
         int taskType;
-        double from, to;
+        double from;
+        double to;
         requirementName = input.getRequirementNameInput();
         taskType = input.getTaskTypeInput();
         date = input.getDate();
@@ -59,7 +57,6 @@ public class TaskManager {
         to = input.getToInput(from);
         assignee = input.getAssigneeInput();
         reviewer = input.getReviewerInput();
-        // Check for overlap
         if (checkDuplicate(date, assignee, from, to)) {
             System.out.println(Message.OVERLAPS);
         } else {
@@ -92,7 +89,7 @@ public class TaskManager {
     }
 
     /**
-     * Searches for a task by ID.
+     * Searches for a task by ID
      *
      * @param id The ID of the task to be found
      * @return Task object or null if not found
@@ -109,10 +106,10 @@ public class TaskManager {
     /**
      * Adds sample data to the list of tasks.
      */
-    public void tempData() {
-        listTask.add(new Task(1, "Nguyen Huy Tam", "25-11-2023", 8.5, 17, "Dev", "Lead"));
-        listTask.add(new Task(3, "Nguyen Viet Nam", "25-12-2023", 0, 0, "Web", "Dev"));
-        listTask.add(new Task(4, "Nguyen Duc Anh", "21-11-2023", 0, 0, "Design", "Web"));
-        listTask.add(new Task(2, "Nguyen Duc Hung", "05-11-2023", 0, 0, "BA", "Dev"));
+    public void templateData() {
+        listTask.add(new Task(1, "Nguyen Huy Tam", "25/11/2023", 8.5, 17.5, "Dev", "Leader"));
+        listTask.add(new Task(2, "Mai Nhat Hoang", "26/11/2023", 8.5, 17.5, "Design", "Dev"));
+        listTask.add(new Task(3, "Nguyen Huy Tam", "27/11/2023", 8.5, 17.5, "Staff", "Leader"));
+        listTask.add(new Task(4, "Nguyen Huy Tam", "28/11/2023", 8.5, 17.5, "BA", "Leader"));
     }
 }
