@@ -60,12 +60,12 @@ public class AccountManager {
         ResourceBundle bundle = ResourceBundle.getBundle("language/message", locale);
         
         String username = unity.getString(bundle.getString("messageUsername"), bundle.getString("messageUsernameError"), message.REGEX_USERNAME);
-        String password = unity.getString(bundle.getString("messagePassword"), bundle.getString("meassagePasswordError"), message.REGEX_PASSWORD);
-        handleCaptcha(bundle.getString("meassageCaptcha"), bundle.getString("meassageCaptchaInput"), bundle.getString("meassageCaptchaError"));
+        String password = unity.getString(bundle.getString("messagePassword"), bundle.getString("messagePasswordError"), message.REGEX_PASSWORD);
+        handleCaptcha(bundle.getString("messageCaptcha"), bundle.getString("messageCaptchaInput"), bundle.getString("messageCaptchaError"));
         if(!checkAccount(username, password)){
-            System.out.println(bundle.getString("meassageAccountError"));
+            System.out.println(bundle.getString("messageAccountError"));
         }else{
-            System.out.println(bundle.getString("meassageSuccessfully"));
+            System.out.println(bundle.getString("messageSuccessfully"));
         }
     }
 
