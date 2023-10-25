@@ -31,8 +31,8 @@ public class AccountManager {
     public void UsersData(){
         accountList.add(new Account("2283862588", "huytam258"));
         accountList.add(new Account("9890125888", "huytam2106"));
-        accountList.add(new Account("1049817261", "chdi129YIUQWIE"));
-        accountList.add(new Account("1059817261", "dhdi129YIUQWIE"));
+        accountList.add(new Account("1234567890", "123456abc"));
+        accountList.add(new Account("0987654321", "12345678a"));
     }
 
     /**
