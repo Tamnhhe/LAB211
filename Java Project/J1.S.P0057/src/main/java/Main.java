@@ -1,7 +1,19 @@
+
 import java.util.Scanner;
 
+/**
+ * Class: Main 
+ * Author: Tamnhhe173108 
+ * Subject: J1.S.P0057
+ *
+ * The Main class contains the main method for running the user management
+ * system.
+ */
 public class Main {
 
+    /**
+     * Displays the main menu.
+     */
     public static void menu() {
         System.out.println(Message.MENU);
     }

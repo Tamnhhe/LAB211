@@ -1,4 +1,10 @@
-
+/**
+ * Class: Message
+ * Author: Tamnhhe173108
+ * Subject: J1.S.P0057
+ * 
+ * The Message class provides constants for user messages and prompts used in the program.
+ */
 public class Message {
 
     public static final String MENU = "========USER MANAGEMENT SYSTEM=========\n"

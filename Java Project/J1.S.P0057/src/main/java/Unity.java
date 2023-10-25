@@ -1,11 +1,24 @@
-
 import java.util.Scanner;
 import java.util.ArrayList;
 
+/**
+ * Class: Unity
+ * Author: Tamnhhe173108
+ * Subject: J1.S.P0057
+ * 
+ * The Unity class provides methods for checking and creating user accounts.
+ */
 public class Unity {
 
+    // List to store user accounts
     private final ArrayList<Account> list = new ArrayList<>();
 
+    /**
+     * Checks if a given username is valid.
+     * 
+     * @param result The username to be checked.
+     * @return True if the username is valid, false otherwise.
+     */
     public boolean checkUser(String result) {
         if (result.contains(" ") || result.length() < Message.MIN_LENGTH_USERNAME) {
             return false;
@@ -14,6 +27,12 @@ public class Unity {
         }
     }
 
+    /**
+     * Checks if a given password is valid.
+     * 
+     * @param result The password to be checked.
+     * @return True if the password is valid, false otherwise.
+     */
     public boolean checkPass(String result) {
         if (result.contains(" ") || result.length() < Message.MIN_LENGTH_PASSWORD) {
             return false;
@@ -22,6 +41,9 @@ public class Unity {
         }
     }
 
+    /**
+     * Creates a new user account.
+     */
     public void createAccount() {
         Scanner scanner = new Scanner(System.in);
         String username;
@@ -49,6 +71,9 @@ public class Unity {
 
     }
 
+    /**
+     * Logs in to an existing user account.
+     */
     public void loginAccount() {
         Scanner scanner = new Scanner(System.in);
         boolean find = false;
@@ -65,11 +90,10 @@ public class Unity {
                 break;
             }
         }
-        if (find == true) {
+        if (find) {
             System.out.println(Message.SUCCESSFULL);
         } else {
             System.out.println(Message.INVALID);
         }
-
     }
 }
